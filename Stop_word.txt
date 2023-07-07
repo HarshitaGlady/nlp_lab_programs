@@ -1,0 +1,15 @@
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+
+sentence = "All work and no play makes Jake a dull boy."
+words = word_tokenize(sentence)
+print(words)
+stop_words = set(stopwords.words("english"))
+filtered_list = []
+
+for word in words :
+    if word.casefold() not in stop_words :
+        filtered_list.append(word)
+        
+print(filtered_list)

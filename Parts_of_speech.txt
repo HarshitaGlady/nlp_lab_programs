@@ -1,0 +1,5 @@
+import nltk
+from nltk.tokenize import word_tokenize
+str = "All Work and No play makes Jack Dull Boy."
+words = word_tokenize(str)
+nltk.pos_tag(words)

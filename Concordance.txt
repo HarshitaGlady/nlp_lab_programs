@@ -1,0 +1,2 @@
+text8.concordance("man")
+text8.concordance("woman")

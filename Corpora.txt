@@ -1,0 +1,8 @@
+from nltk import FreqDist
+from nltk.tokenize import word_tokenize
+data = ("All work and no play makes jack dull boy.\n"+
+"All All and no All makes All a dull boy.")
+words = word_tokenize(data)
+fdist1 = FreqDist(words)
+print(fdist1.most_common(2)) # Prints two most common tokens
+print(fdist1.hapaxes())

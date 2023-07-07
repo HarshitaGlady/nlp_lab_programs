@@ -1,0 +1,12 @@
+import nltk
+from nltk.stem import WordNetLemmatizer
+lemmatizer = WordNetLemmatizer()
+
+str = "The friends of Ram loves animals"
+words = word_tokenize(str)
+print(words)
+lemmatized_words = [lemmatizer.lemmatize(word) for word in words]
+print(lemmatized_words)
+word1=lemmatizer.lemmatize("worst")
+word2=lemmatizer.lemmatize("worst",pos="a")
+print(word1, word2)

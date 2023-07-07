@@ -1,0 +1,10 @@
+import nltk
+from nltk.stem import PorterStemmer
+from nltk.tokenize import word_tokenize
+stemmer = PorterStemmer()
+print("Stemming")
+str = """The crew of the USS Discovery Discovered many Discoveries. Discovering is what Explores do"""
+words = word_tokenize(str)
+print(words)
+stemmed_words = [stemmer.stem(word) for word in words]
+print(stemmed_words)

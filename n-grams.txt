@@ -1,0 +1,14 @@
+from nltk import ngrams
+sentence = "This is my sentence and I want to ngramize it."
+n = 6
+w_6grams = ngrams(sentence.split(), n)
+for grams in w_6grams :
+    print(grams)
+
+#Character N-Grams
+from nltk import ngrams
+sentence = "This is my sentence and I want to ngramize it."
+n = 6
+c_6grams = ngrams(sentence, n)
+for grams in c_6grams:
+    print(''.join(grams))

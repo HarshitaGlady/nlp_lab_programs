@@ -1,0 +1,8 @@
+import nltk
+from nltk.tokenize import sent_tokenize, word_tokenize
+data = "All work and no play makes Jake a dull boy. Jack and Jill went up the hill"
+words = word_tokenize(data)
+sentences = sent_tokenize(data)
+print(words)
+print("\n")
+print(sentences)
